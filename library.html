@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="library.css">
+    <title>Library</title>
+</head>
+<body>
+    <div id="container">
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg><span>Library</span></p>
+    <div id="addBookButton"><button id="addBook">Add Book</button></div>
+    <div id="div-holder" class="cards">
+
+    </div>
+        <dialog id="dialog-Box">
+            <form>
+                <p>
+                <label for="author">Author:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="author" name="author" required>
+                </label>
+            </p>
+            <p>
+                <label for="title">Title:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="title" name="title" required>
+                </label>
+            </p>
+            <p>
+                <label for="pages">No. of Pages:&nbsp;
+                    <input type="number" id="pages" name="pages" max="5000" min="1" required>
+                </label>
+            </p>
+            <p>
+                <label for="status">Status:&nbsp;&nbsp;
+                <select name="status" id="status" required>
+                    <option >Not Read</option>
+                    <option>Read</option>
+                </select>
+            </label>
+        </p>
+        <div>
+            <button type="button" value="cancel" formmethod="dialog">Cancel</button>
+            <button type="submit" id="confirm">Confirm</button>
+        </div>
+            </form>
+        </dialog> 
+    
+    <script src="library.js"></script>
+</div>
+</body>
+</html>

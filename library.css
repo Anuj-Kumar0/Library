@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #92400e;
+}
+
+p {
+  margin: 0;
+  border: 8px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  margin: 10px;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+#addBook {
+  margin: 10px;
+  background-color: #15803d;
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  height: 50px;
+  width: 100px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#addBook:hover,
+button.delete-button:hover {
+  border: 2px solid black;
+  color: black;
+}
+
+#addBookButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-content {
+  color: #fb923c;
+  font-weight: 600;
+}
+
+button.delete-button {
+  margin: 10px;
+  background-color: #15803d;
+  color: white;
+  border: 5px solid white;
+  border-radius: 25px;
+  height: 50px;
+  width: 100px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+div.cards {
+  display: grid;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: antiquewhite;
+  border-left: 25px solid #15803d;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+}
